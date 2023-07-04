@@ -1,0 +1,23 @@
+.banner{
+    margin-top:10%
+}
+.gradient-text {
+    background: linear-gradient(to right, #23074d, #cc5333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .btn{
+    background:linear-gradient(to right, #23074d, #cc5333) ;
+   
+  }
+  .ppic{
+    width: 550px;
+    height: 350px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .flex{
+    display:flex;
+    gap:50px;
+  }
