@@ -5,3 +5,10 @@
 .aboutme_text{
     font-weight: 800;
 }
+.about_me{
+    width: 550px;
+    height: 550px;
+}
+.about_me_desc{
+    margin-top: 180px;
+}
