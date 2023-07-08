@@ -8,6 +8,9 @@ import node from '../../assets/nodejs.png';
 import express from '../../assets/express.png';
 import reactjs from '../../assets/react.png';
 import mongo from '../../assets/mongodb.png';
+import firebase from '../../assets/firebase.png';
+import github from '../../assets/github.png';
+
 
 
 
@@ -24,6 +27,8 @@ const Skills = () => {
            <img src={express} alt="" />
            <img src={reactjs} alt="" />
            <img src={mongo} alt="" />
+           <img src={firebase} alt="" />
+           <img src={github} alt="" />
             
            </div>
             

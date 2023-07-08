@@ -1,0 +1,28 @@
+.projects{
+    margin-top: 150px;
+}
+.project_title{
+    font-weight: 800;
+}
+.card-img-top{
+    height:500px;
+    object-fit: cover;
+}
+.card{
+    background-color: #223741;
+}
+hr{
+    background-color: white;
+}
+.technology{
+    color:white;
+    background-color: #133955;
+    padding:3px;
+    border-radius: 40px;
+    text-align: center;
+    width:150px
+}
+.technologies{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
