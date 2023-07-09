@@ -1,16 +1,38 @@
-import React from 'react';
+import React,{ useEffect, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
 import phone from '../../assets/phone.png';
 import email from '../../assets/email.png';
 import fb from '../../assets/fb.png';
 import linkedin from '../../assets/linkedin.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({  offset: 200,
+        duration: 600,
+        easing: 'ease-in-sine',
+        delay: 100,
+      });
+  }, [])
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm(import.meta.env.VITE_serviceId, import.meta.env.VITE_templateId, form.current, import.meta.env.VITE_publicKey)
+          .then((result) => {
+              console.log(result.text);
+              form.reset();
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
     return (
-        <div className='container contact mb-5'>
+        <div className='container contact mb-5' id="contact">
             <h1 className='text-center gradient-text git'>Get In Touch</h1>
             <div className="row row-cols-1 row-cols-md-2 mt-5">
-                <div>
+                <div className='contact_info' data-aos="fade-right">
                    <h3><img className='phone' src={phone} alt="" /> +8801953588830</h3>
                    <h3><img className='phone' src={email} alt="" /> rianontu13@gmail.com</h3>
                    <div className="d-flex mt-3">
@@ -19,8 +41,8 @@ const Contact = () => {
                    </div>
 
                 </div>
-                <div>
-                <form>
+                <div className='form' data-aos="fade-left">
+                <form ref={form} onSubmit={sendEmail}>
   <div class="form-group">
     <label for="exampleInputEmail1">Your Name</label>
     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Name"/>

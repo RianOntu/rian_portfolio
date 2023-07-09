@@ -26,3 +26,12 @@ hr{
     display: grid;
     grid-template-columns: repeat(5,1fr);
 }
+@media only screen and (max-width: 576px){
+    .projects{
+        margin-top: 80px;
+    }
+    .technologies{
+        
+        grid-template-columns: repeat(3,1fr);
+    }
+}

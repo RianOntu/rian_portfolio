@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Skills.css';
 import html from '../../assets/html.png';
 import css from '../../assets/css-3.png';
@@ -10,15 +10,24 @@ import reactjs from '../../assets/react.png';
 import mongo from '../../assets/mongodb.png';
 import firebase from '../../assets/firebase.png';
 import github from '../../assets/github.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 
 const Skills = () => {
+    useEffect(() => {
+        AOS.init({  offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+          });
+      }, [])
     return (
-        <div className='container skills'>
+        <div className='container skills' id="skills">
            <h1 className='text-center gradient-text skills-text'>My Skills</h1>
-           <div className="grid skill_icon mt-5 mb-5">
+           <div className="grid skill_icon mt-5 mb-5" data-aos="fade-up">
            <img src={html} alt="" />
            <img src={css} alt="" />
            <img src={bootstrap} alt="" />

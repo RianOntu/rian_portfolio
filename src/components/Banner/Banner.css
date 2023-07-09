@@ -21,3 +21,13 @@
     display:flex;
     gap:50px;
   }
+
+@media only screen and (max-width: 576px){
+  .flex{
+    flex-direction: column-reverse;
+  }
+  .ppic{
+    width: 450px;
+    margin: auto;
+  }
+}

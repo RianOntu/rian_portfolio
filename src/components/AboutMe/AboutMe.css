@@ -12,3 +12,16 @@
 .about_me_desc{
     margin-top: 180px;
 }
+@media only screen and (max-width: 576px){
+    .aboutme{
+        margin-top: 80px;
+    }
+    .about_me_desc{
+        margin-top: 20px;
+    }
+    .about_me{
+        width: 450px;
+        height: 550px;
+    }
+
+}

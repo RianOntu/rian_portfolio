@@ -5,7 +5,7 @@ import mypic from '../../assets/pic_rian.jpg';
 
 const Banner = () => {
     return (
-        <div className='container banner'>
+        <div className='container banner' id="home">
           <div className="flex">
               <div className="description">
                 <h1 className='text-white'>Hi,I am <br />  RIAN-AL-NUR</h1><br />

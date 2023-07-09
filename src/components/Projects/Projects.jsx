@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Projects.css';
 import toy from '../../assets/toy-house.png';
 import chef from '../../assets/chef_world.png';
 import dream from '../../assets/dream-job.png';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Projects = () => {
+  useEffect(() => {
+    AOS.init({  offset: 200,
+        duration: 600,
+        easing: 'ease-in-sine',
+        delay: 100,
+      });
+  }, [])
     return (
-        <div className='container projects'>
+        <div className='container projects' id="projects">
             <h1 className='text-center gradient-text project_title'>My Projects</h1>
             <div className="row row-cols-1 mt-5">
-            <div class="card mb-5">
+            <div class="card mb-5" data-aos="fade-up">
   <img class="card-img-top" src={toy} alt="Card image cap"/>
   <div class="card-body">
     <h5 class="card-title text-center text-white">Toy House</h5>
