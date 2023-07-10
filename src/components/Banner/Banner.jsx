@@ -21,7 +21,7 @@ const Banner = () => {
         <p className='text-white'>
         I am very passionate about creating appealing and eye-catching websites.  I also focus on the website functionalities. I love to do this.
         </p>
-        <button className='btn text-white'><i class="fa-solid fa-download mr-2"></i>Download Resume</button>
+        <a href='https://drive.google.com/uc?id=1JFOuA7A-f9ooO-z5CJYMlDdb9Mm_XQ4G&export=download'  className='btn text-white'><i class="fa-solid fa-download mr-2"></i>Download Resume</a>
 
               </div>
               <div className="image">

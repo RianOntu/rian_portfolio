@@ -51,7 +51,7 @@ route</p>
 </div>
           {/* second project       */}
 
-          <div class="card mb-5">
+          <div class="card mb-5" data-aos="fade-up">
   <img class="card-img-top" src={chef} alt="Card image cap"/>
   <div class="card-body">
     <h5 class="card-title text-center text-white">Chef's World</h5>
@@ -84,7 +84,7 @@ route</p>
 </div>
 {/* third project */}
 
-<div class="card mb-5">
+<div class="card mb-5" data-aos="fade-up">
   <img class="card-img-top" src={dream} alt="Card image cap"/>
   <div class="card-body">
     <h5 class="card-title text-center text-white">Dream Job</h5>
