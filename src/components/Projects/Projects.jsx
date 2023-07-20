@@ -15,7 +15,7 @@ const Projects = () => {
   }, [])
     return (
         <div className='container projects' id="projects">
-            <h1 className='text-center gradient-text project_title'>My Projects</h1>
+            <h1 className='text-center text-white project_title'>My Projects</h1>
             <div className="row row-cols-1 mt-5">
             <div class="card mb-5" data-aos="fade-up">
   <img class="card-img-top" src={toy} alt="Card image cap"/>
@@ -106,7 +106,7 @@ route</p>
     </div>
     <hr />
     <div className='d-flex justify-content-center'>
-         <a href='https://resilient-maamoul-12530d.netlify.app/' className='btn text-white mr-5'><i class="fa-solid fa-up-right-from-square mr-2"></i>Live</a>
+         <a href='https://64b93eb6142fcf05859368e1--resilient-maamoul-12530d.netlify.app/' className='btn text-white mr-5'><i class="fa-solid fa-up-right-from-square mr-2"></i>Live</a>
          <a href="https://github.com/RianOntu/dream-job" className='btn text-white mr-5' ><i class="fa-brands fa-github mr-2"></i>Client</a>
         
     </div>

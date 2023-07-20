@@ -26,7 +26,7 @@ const Skills = () => {
       }, [])
     return (
         <div className='container skills' id="skills">
-           <h1 className='text-center gradient-text skills-text'>My Skills</h1>
+           <h1 className='text-center text-white skills-text'>My Skills</h1>
            <div className="grid skill_icon mt-5 mb-5" data-aos="fade-up">
            <img src={html} alt="" />
            <img src={css} alt="" />

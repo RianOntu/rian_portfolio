@@ -6,7 +6,13 @@
 }
 .skill_icon img{
      height: 150px;
-     width: 75px;
+     width: 175px;
+     background-color: white;
+     padding:20px;
+     border-radius: 20px;
+}
+body{
+    overflow-x: hidden;
 }
 .grid{
     display:grid;
@@ -20,9 +26,17 @@
         margin-top: 80px;
     }
     .grid{
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
         grid-gap:10px;
         grid-row-gap: 60px;
         place-items: center;
     }
 }
+@media only screen and (min-width: 576px) and (max-width:992px){
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+        grid-gap:10px;
+        grid-row-gap: 60px;
+        place-items: center;
+    }
+  }

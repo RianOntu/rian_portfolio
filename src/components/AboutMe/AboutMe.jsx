@@ -14,7 +14,7 @@ const AboutMe = () => {
   }, [])
     return (
         <div className='container aboutme' id="aboutme">
-            <h1 className='text-center gradient-text aboutme_text'>About Me</h1>
+            <h1 className='text-center text-white aboutme_text'>About Me</h1>
             <div className="flex mt-5">
               <div data-aos="fade-right">
               <img className='about_me' src={about_me2} alt="" />

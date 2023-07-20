@@ -9,7 +9,7 @@ const Banner = () => {
           <div className="flex">
               <div className="description">
                 <h1 className='text-white'>Hi,I am <br />  RIAN-AL-NUR</h1><br />
-        <div className="gradient-text" style={{fontSize:'44px',fontWeight:800,color:'white'}}>
+        <div style={{fontSize:'44px',fontWeight:800,color:'white'}}>
         <Typewriter
   options={{
     strings: ['Front-End Developer', 'MERN stack developer','Web Developer'],

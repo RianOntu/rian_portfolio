@@ -25,3 +25,12 @@
     }
 
 }
+@media only screen and (min-width: 576px) and (max-width:992px){
+    .about_me{
+        width: 350px;
+        height: 350px;
+    }
+    .about_me_desc{
+        margin-top:32px;
+    }
+  }
