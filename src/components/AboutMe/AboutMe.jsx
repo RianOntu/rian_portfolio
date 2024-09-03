@@ -22,7 +22,7 @@ const AboutMe = () => {
               
               <div className='about_me_desc' data-aos="fade-left">
                 <p className='text-white text-justify'>
-                I am RIAN-AL-NUR, a recent graduate with a BSc in Computer Science and Engineering from the American International University-Bangladesh. Throughout my academic journey, I have acquired a diverse range of skills and knowledge. Additionally, I have recently completed MERN stack development training from Programming Hero.Frontend development is my passion, and I am eager to work collaboratively in a team environment while continuously learning new web technologies. I am also driven to contribute to a company's needs and goals.
+                I am RIAN-AL-NUR, a graduate with a BSc in Computer Science and Engineering from the American International University-Bangladesh. Throughout my academic journey, I have acquired a diverse range of skills and knowledge. Additionally, I have recently completed MERN stack development training from Programming Hero.Frontend development is my passion, and I am eager to work collaboratively in a team environment while continuously learning new web technologies. I am also driven to contribute to a company's needs and goals.
                 </p>
               </div>
             </div>
