@@ -25,20 +25,44 @@ hr{
 .technologies{
     display: grid;
     grid-template-columns: repeat(5,1fr);
+    
+}
+.projects_grid{
+    display: grid!important;
+    grid-template-columns: repeat(2,2fr);
+    grid-column-gap: 30px!important;
+}
+.technologies{
+    display:flex;
+    align-items: center;
+    column-gap:34px;
+    justify-content: center;
+    height: 150px;
 }
 @media only screen and (max-width: 576px){
     .projects{
         margin-top: 80px;
+        flex-direction: column;
+    }
+    .projects_grid{
+        grid-template-columns: repeat(1,1fr);
     }
     .technologies{
         
         grid-template-columns: repeat(2,1fr);
     }
+    .ph{
+        flex-direction: column-reverse;
+    }
+   
 }
-@media only screen and (min-width: 576px) and (max-width:992px){
+@media only screen and (min-width: 577px) and (max-width:992px){
     .technologies{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         place-items: center;
+    }
+    .project_description{
+        height:250px;
     }
   }

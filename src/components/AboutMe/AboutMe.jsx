@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './AboutMe.css';
-import about_me2 from '../../assets/aboutme3.png';
+import about_me2 from '../../assets/pic_rian.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -14,15 +14,13 @@ const AboutMe = () => {
   }, [])
     return (
         <div className='container aboutme' id="aboutme">
-            <h1 className='text-center text-white aboutme_text'>About Me</h1>
-            <div className="flex mt-5">
-              <div data-aos="fade-right">
-              <img className='about_me' src={about_me2} alt="" />
-              </div>
-              
-              <div className='about_me_desc' data-aos="fade-left">
-                <p className='text-white text-justify'>
-                I am RIAN-AL-NUR, a graduate with a BSc in Computer Science and Engineering from the American International University-Bangladesh. Throughout my academic journey, I have acquired a diverse range of skills and knowledge. Additionally, I have recently completed MERN stack development training from Programming Hero.Frontend development is my passion, and I am eager to work collaboratively in a team environment while continuously learning new web technologies. I am also driven to contribute to a company's needs and goals.
+           
+            <div className="flex about mt-5 align-items-start">
+             
+              <img className='ppic' src={about_me2} style={{width:"400px",height:"430px"}} alt="" />
+              <div className='about_me_desc'>
+                <p className='text-justify' style={{color:"#8892B0"}}>
+                I am RIAN-AL-NUR, a graduate with a BSc in Computer Science and Engineering from the American International University-Bangladesh. Throughout my academic journey, I have acquired a diverse range of skills and knowledge. Additionally, I have recently completed <span style={{color:"white"}}>MERN stack development training</span> from <span style={{color:"white"}}>Programming Hero</span> also from <span style={{color:"white"}}>Bohubrihi</span>.<span style={{color:"white"}}>Frontend development</span> is my passion, and I am eager to work <span style={{color:"white"}}>collaboratively in a team environment</span>  while continuously learning new web technologies. I am also driven to contribute to a company's needs and goals.
                 </p>
               </div>
             </div>

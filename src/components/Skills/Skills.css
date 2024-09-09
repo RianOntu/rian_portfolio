@@ -1,42 +1,52 @@
 .skills{
-    margin-top: 90px;
+    margin-top: 220px;
+    align-items: flex-start!important;
+    flex-direction: row;
 }
 .skills-text{
-    font-weight: 800;
+    margin-top: -7px;
 }
-.skill_icon img{
-     height: 150px;
-     width: 175px;
-     background-color: white;
-     padding:20px;
-     border-radius: 20px;
+.flexed{
+    gap:10px;
+    align-items: center;
+    
 }
+/* .flex-column{
+    display:flex!important;
+    column-gap: 40px;
+} */
+.skill_icon{
+    display: grid!important;
+grid-template-columns: repeat(4,2fr);
+grid-column-gap: 96px;
+}
+
+
 body{
     overflow-x: hidden;
 }
-.grid{
-    display:grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-gap:10px;
-    grid-row-gap: 60px;
-    place-items: center;
-}
-@media only screen and (max-width: 576px){
-    .skills{
-        margin-top: 80px;
+@media (max-width:576px){
+    .flexed{
+        flex-direction: row;
     }
-    .grid{
-        grid-template-columns: repeat(2,1fr);
-        grid-gap:10px;
-        grid-row-gap: 60px;
-        place-items: center;
+    .skill_icon{
+        grid-template-columns: repeat(1,1fr);
+        grid-column-gap:30px ;
+    }
+    .tools,.database{
+        margin-top: 50px;
+    }
+    .framework{
+        margin-top: 35px;
     }
 }
-@media only screen and (min-width: 576px) and (max-width:992px){
-    .grid{
-        grid-template-columns: repeat(3,1fr);
-        grid-gap:10px;
-        grid-row-gap: 60px;
-        place-items: center;
+@media (min-width:577px) and (max-width:820px){
+
+    .skill_icon{
+        grid-template-columns: repeat(3,2fr);
+        grid-column-gap:30px ;
     }
-  }
+    .database{
+        margin-top: 50px;
+    }
+}

@@ -6,10 +6,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .btn{
-    background:linear-gradient(to right, #23074d, #cc5333) ;
-   
-  }
+
   .ppic{
     width: 550px;
     height: 350px;
@@ -49,8 +46,16 @@
   .waving-hand{
    font-size: 40px;
     animation-name: wave-animation;
-    animation-duration: 2.5s;
+    animation-duration: 5s;
     animation-iteration-count: 1;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+  .waving-hand:hover{
+    font-size: 40px;
+    animation-name: wave-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
     transform-origin: 70% 70%;
     display: inline-block;
   }
@@ -68,21 +73,30 @@
     display:flex;
     gap:50px;
   }
- 
+  
   
 
 @media only screen and (max-width: 576px){
-  .flex{
+  .banner_inner{
     flex-direction: column-reverse;
   }
   .ppic{
-    width: 350px;
+    width: 350px!important;
     margin: auto;
   }
+  .moon{
+    width: 400px;
+  }
 }
-@media only screen and (min-width: 576px) and (max-width:992px){
+@media only screen and (min-width: 577px) and (max-width:992px){
   .ppic{
     width: 250px;
     margin: auto;
+  }
+  .large_width{
+    width:400px!important
+  }
+  .moon{
+    width:300px!important
   }
 }

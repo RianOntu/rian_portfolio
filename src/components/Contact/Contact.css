@@ -5,14 +5,23 @@
     font-weight: 800;
 }
 .phone{
-    width: 40px;
-    height: 40px;
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+}
+.contact_info{
+    display:flex;
+    column-gap:34px;
+    align-items: center;
+
 }
 @media only screen and (max-width: 576px){
     .contact{
         margin-top: 50px;
+        flex-direction: column;
     } 
-    .contact_info,.form{
-        padding:30px
+    .contact_info{
+        flex-direction: column;
     }
+  
 }
