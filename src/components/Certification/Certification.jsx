@@ -6,7 +6,7 @@ import './Certification.css';
 function Certification() {
     return (
         <>
-        <div style={{marginTop:"150px"}} className="container">
+        <div style={{marginTop:"150px"}} className="container certification">
         <ProgrammingHero/>
         <Bohubrihi/>
         
